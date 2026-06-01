@@ -19,7 +19,6 @@
             touch-action: manipulation;
         }
 
-        /* 1000 ПУШИНОВ */
         .thousand-overlay {
             position: fixed; top: 0; left: 0; right: 0; bottom: 0;
             z-index: 10015; pointer-events: none;
@@ -33,7 +32,7 @@
         .thousand-text {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
             z-index: 10016; pointer-events: none;
-            font-size: 80px; font-weight: 900; color: gold;
+            font-size: 60px; font-weight: 900; color: gold;
             text-shadow: 0 0 60px gold, 0 0 120px orange, 0 0 200px red;
             animation: thousandPop 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
         }
@@ -65,7 +64,7 @@
 
         .giant-67 {
             position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            z-index: 10006; pointer-events: none; font-size: 250px; font-weight: 900;
+            z-index: 10006; pointer-events: none; font-size: 150px; font-weight: 900;
             animation: giant67Anim 11s ease-in-out forwards;
             text-shadow: 0 0 80px rgba(255,50,80,1), 0 0 150px rgba(255,100,0,0.8), 0 0 250px rgba(255,200,0,0.6);
         }
@@ -87,17 +86,17 @@
 
         .master-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10010; pointer-events: none; display: flex; align-items: center; justify-content: center; animation: masterOverlayIn 0.5s ease-out forwards; }
         @keyframes masterOverlayIn { 0% { background: rgba(0,0,0,0); } 100% { background: rgba(0,0,0,0.4); } }
-        .master-text { font-size: 100px; font-weight: 900; color: gold; text-shadow: 0 0 60px gold, 0 0 120px orange, 0 0 200px red, 0 0 300px white; animation: masterTextPop 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; }
+        .master-text { font-size: 60px; font-weight: 900; color: gold; text-shadow: 0 0 60px gold, 0 0 120px orange, 0 0 200px red, 0 0 300px white; animation: masterTextPop 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; }
         @keyframes masterTextPop { 0% { transform: scale(0) rotate(-360deg); opacity: 0; } 100% { transform: scale(1) rotate(0deg); opacity: 1; } }
-        .master-subtitle { position: fixed; top: 60%; left: 50%; transform: translate(-50%, -50%); z-index: 10011; pointer-events: none; font-size: 40px; color: white; font-weight: 700; text-shadow: 0 0 30px gold; animation: masterSubIn 1.5s ease-out 0.8s forwards; opacity: 0; }
+        .master-subtitle { position: fixed; top: 65%; left: 50%; transform: translate(-50%, -50%); z-index: 10011; pointer-events: none; font-size: 25px; color: white; font-weight: 700; text-shadow: 0 0 30px gold; animation: masterSubIn 1.5s ease-out 0.8s forwards; opacity: 0; }
         @keyframes masterSubIn { 0% { opacity: 0; transform: translate(-50%, -50%) translateY(50px); } 100% { opacity: 1; transform: translate(-50%, -50%) translateY(0); } }
 
         .level-badge {
-            position: fixed; top: 10px; left: 50%; transform: translateX(-50%);
+            position: fixed; top: 55px; left: 50%; transform: translateX(-50%);
             z-index: 10000; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
-            border-radius: 50px; padding: 8px 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-radius: 50px; padding: 6px 14px; box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             border: 2px solid #ffd0da; display: flex; align-items: center; gap: 6px;
-            font-size: 1rem; font-weight: 700; color: #c94d5d; transition: all 0.3s;
+            font-size: 0.85rem; font-weight: 700; color: #c94d5d; transition: all 0.3s;
         }
         .level-badge.level-up { animation: levelUpPop 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); border-color: gold; background: rgba(255,240,200,0.95); }
         @keyframes levelUpPop { 0% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.4); } 100% { transform: translateX(-50%) scale(1); } }
@@ -107,7 +106,7 @@
 
         .speed-boost { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 999; animation: speedFlash 0.3s ease-out forwards; }
         @keyframes speedFlash { 0% { background: rgba(255,200,0,0.4); } 100% { background: transparent; } }
-        .speed-timer { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); z-index: 10001; font-size: 1.2rem; font-weight: 900; color: #ff6600; text-shadow: 0 2px 10px rgba(255,100,0,0.5); pointer-events: none; animation: pulse 0.5s ease-in-out infinite; }
+        .speed-timer { position: fixed; top: 90px; left: 50%; transform: translateX(-50%); z-index: 10001; font-size: 1.2rem; font-weight: 900; color: #ff6600; text-shadow: 0 2px 10px rgba(255,100,0,0.5); pointer-events: none; animation: pulse 0.5s ease-in-out infinite; }
         @keyframes pulse { 0%, 100% { transform: translateX(-50%) scale(1); } 50% { transform: translateX(-50%) scale(1.2); } }
 
         .music-btn {
@@ -187,7 +186,7 @@
             position: relative; z-index: 20; border: 3px solid #ffd0da;
         }
 
-        h1 { font-size: 1.3rem; color: #c94d5d; display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+        h1 { font-size: 1.3rem; color: #c94d5d; display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; margin-top: 25px; }
         .sub { font-size: 0.85rem; background: #fff5f0; display: inline-block; padding: 6px 16px; border-radius: 50px; color: #d4606e; font-weight: 600; margin: 10px 0 5px; border: 1.5px solid #ffd0da; }
         .timer-container { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin: 20px 0; }
         .time-block { background: #4a3f52; border-radius: 20px; padding: 12px 8px; min-width: 60px; box-shadow: 0 8px 20px rgba(100, 70, 80, 0.3); }
@@ -241,7 +240,7 @@
 
         @media (min-width: 768px) {
             .card { max-width: 700px; border-radius: 60px; padding: 25px 20px 40px; }
-            h1 { font-size: 1.8rem; }
+            h1 { font-size: 1.8rem; margin-top: 0; }
             .sub { font-size: 1rem; }
             .number { font-size: 3rem; }
             .time-block { min-width: 90px; padding: 15px 10px; }
@@ -251,6 +250,7 @@
             .donut-bg { font-size: 45px !important; }
             .star-bg { font-size: 30px !important; }
             .heart-bg { font-size: 25px !important; }
+            .level-badge { top: 25px; font-size: 1.2rem; padding: 10px 22px; }
         }
 
         #confetti-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 998; }
@@ -294,7 +294,6 @@
 
 <script>
 (function() {
-    // ===== ЗВУКИ =====
     const popSound = new Audio('./pop.mp3'); popSound.volume = 0.4;
     const sound67 = new Audio('./67.mp3'); sound67.volume = 0.8;
     const birthdayAudio = new Audio('./birthday-song.mp3'); birthdayAudio.loop = true; birthdayAudio.volume = 0.7;
@@ -306,8 +305,7 @@
     function playSound1000() { sound1000.currentTime = 0; sound1000.play().catch(() => {}); }
     function playSound100() { sound100.currentTime = 0; sound100.play().catch(() => {}); }
 
-    let isMusicPlaying = false;
-    let isBirthday = false;
+    let isMusicPlaying = false, isBirthday = false;
 
     function toggleMusic() {
         if (!isBirthday) return;
@@ -316,17 +314,9 @@
     }
     document.getElementById('musicBtn').addEventListener('click', (e) => { e.stopPropagation(); toggleMusic(); });
 
-    let score = 0;
-    let level = 1;
-    let comboCount = 0;
-    let comboTimer = null;
-    let speedBoost = false;
-    let speedBoostTimer = null;
-    let fastClicks = 0;
-    let fastClickTimer = null;
-    let donutCount = 0;
-    let achievement67Shown = false;
-    let achievement1000Shown = false;
+    let score = 0, level = 1, comboCount = 0, comboTimer = null, speedBoost = false, speedBoostTimer = null;
+    let fastClicks = 0, fastClickTimer = null, donutCount = 0;
+    let achievement67Shown = false, achievement1000Shown = false;
     let uniquePusheensClicked = new Set();
 
     const achievements = { master: false, sniper: false, sweetTooth: false, lightning: false, pyromaniac: false, collector: false, thousand: false };
@@ -335,27 +325,25 @@
 
     function showThousandAchievement() {
         if (achievement1000Shown) return;
-        achievement1000Shown = true;
-        playSound1000();
+        achievement1000Shown = true; playSound1000();
         const overlay = document.createElement('div'); overlay.className = 'thousand-overlay'; document.body.appendChild(overlay);
         const text = document.createElement('div'); text.className = 'thousand-text'; text.textContent = '🔥 1000 ПУШИНОВ! 🔥'; document.body.appendChild(text);
         setTimeout(() => { overlay.remove(); text.remove(); }, 5000);
-        for (let i = 0; i < 20; i++) setTimeout(() => megaBurst(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 200);
-        for (let i = 0; i < 100; i++) setTimeout(() => firework(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 50);
+        for (let i = 0; i < 8; i++) setTimeout(() => megaBurst(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 200);
+        for (let i = 0; i < 30; i++) setTimeout(() => firework(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 50);
     }
 
     function show67Chaos() {
         if (achievement67Shown) return;
-        achievement67Shown = true;
-        playSound67();
+        achievement67Shown = true; playSound67();
         const flash = document.createElement('div'); flash.className = 'flash-67'; document.body.appendChild(flash); setTimeout(() => flash.remove(), 1000);
         const giant = document.createElement('div'); giant.className = 'giant-67'; giant.textContent = '67'; document.body.appendChild(giant); setTimeout(() => giant.remove(), 11500);
         const chaosTexts = ['67', 'SIX', 'SEVEN', '6️⃣', '7️⃣', '67!', 'SIX-SEVEN', '🔥67🔥', '💥67💥', '✨67✨'];
         function spawnChaosWave() {
-            for (let i = 0; i < 25; i++) {
+            for (let i = 0; i < 15; i++) {
                 const p = document.createElement('div'); p.className = 'chaos-particle';
                 p.textContent = chaosTexts[Math.floor(Math.random() * chaosTexts.length)];
-                p.style.fontSize = (20 + Math.random() * 100) + 'px';
+                p.style.fontSize = (20 + Math.random() * 80) + 'px';
                 p.style.color = ['#ff2d55', 'gold', '#ff6600', '#ff00ff', '#00ffff', 'white'][Math.floor(Math.random() * 6)];
                 p.style.setProperty('--sx', (Math.random() - 0.5) * window.innerWidth + 'px');
                 p.style.setProperty('--sy', (Math.random() - 0.5) * window.innerHeight + 'px');
@@ -367,9 +355,9 @@
                 p.style.left = '50%'; p.style.top = '50%';
                 document.body.appendChild(p); setTimeout(() => p.remove(), 5000);
             }
-            for (let i = 0; i < 8; i++) {
+            for (let i = 0; i < 4; i++) {
                 const imgWrapper = document.createElement('div'); imgWrapper.className = 'special-image-67';
-                const size = 60 + Math.random() * 140;
+                const size = 60 + Math.random() * 120;
                 imgWrapper.style.width = size + 'px'; imgWrapper.style.height = size + 'px';
                 imgWrapper.style.setProperty('--sx', (Math.random() - 0.5) * window.innerWidth + 'px');
                 imgWrapper.style.setProperty('--sy', (Math.random() - 0.5) * window.innerHeight + 'px');
@@ -386,8 +374,8 @@
             }
         }
         spawnChaosWave(); setTimeout(spawnChaosWave, 2000); setTimeout(spawnChaosWave, 4000); setTimeout(spawnChaosWave, 6000); setTimeout(spawnChaosWave, 8000); setTimeout(spawnChaosWave, 10000);
-        for (let i = 0; i < 15; i++) setTimeout(() => megaBurst(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 700);
-        for (let i = 0; i < 30; i++) setTimeout(() => firework(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 350);
+        for (let i = 0; i < 10; i++) setTimeout(() => megaBurst(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 700);
+        for (let i = 0; i < 10; i++) setTimeout(() => firework(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 350);
     }
 
     function showMasterAchievement() {
@@ -399,19 +387,19 @@
         subtitle.textContent = 'Алиса, ты лучшая! 100 пушинов собраны! 💖';
         document.body.appendChild(subtitle);
         setTimeout(() => { overlay.remove(); subtitle.remove(); }, 4000);
-        for (let i = 0; i < 10; i++) setTimeout(() => megaBurst(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 300);
-        for (let i = 0; i < 50; i++) setTimeout(() => firework(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 100);
+        for (let i = 0; i < 8; i++) setTimeout(() => megaBurst(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 300);
+        for (let i = 0; i < 20; i++) setTimeout(() => firework(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 100);
         showAchievementPopup('🏆 МАСТЕР ПУШИНОВ!', 'Собрано 100 пушинов!');
     }
 
     function megaBurst(x, y) {
         const emojis = ['🐱', '😺', '😸', '😻', '🎀', '💝', '✨', '🌟', '🍩', '🎂'];
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 20; i++) {
             setTimeout(() => {
                 const p = document.createElement('div'); p.className = 'mega-pusheen';
                 p.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-                p.style.left = x + 'px'; p.style.top = y + 'px'; p.style.fontSize = (30 + Math.random() * 80) + 'px';
-                const angle = Math.random() * Math.PI * 2; const dist = 100 + Math.random() * 400;
+                p.style.left = x + 'px'; p.style.top = y + 'px'; p.style.fontSize = (30 + Math.random() * 60) + 'px';
+                const angle = Math.random() * Math.PI * 2; const dist = 80 + Math.random() * 300;
                 p.style.setProperty('--mx', Math.cos(angle) * dist + 'px');
                 p.style.setProperty('--my', Math.sin(angle) * dist + 'px');
                 p.style.setProperty('--mr', (Math.random() - 0.5) * 720 + 'deg');
@@ -422,12 +410,12 @@
 
     function firework(x, y) {
         const colors = ['#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff', '#ff922b', '#ff4da6', '#00d2ff'];
-        for (let i = 0; i < 25; i++) {
+        for (let i = 0; i < 10; i++) {
             const dot = document.createElement('div'); dot.className = 'firework';
             dot.style.left = x + 'px'; dot.style.top = y + 'px';
             dot.style.background = colors[Math.floor(Math.random() * colors.length)];
-            dot.style.width = (4 + Math.random() * 8) + 'px'; dot.style.height = dot.style.width;
-            const angle = (Math.PI * 2 * i) / 25; const dist = 30 + Math.random() * 120;
+            dot.style.width = (4 + Math.random() * 6) + 'px'; dot.style.height = dot.style.width;
+            const angle = (Math.PI * 2 * i) / 10; const dist = 20 + Math.random() * 100;
             dot.style.setProperty('--fx', Math.cos(angle) * dist + 'px');
             dot.style.setProperty('--fy', Math.sin(angle) * dist + 'px');
             document.body.appendChild(dot); setTimeout(() => dot.remove(), 1100);
@@ -445,7 +433,7 @@
 
     function showAchievementPopup(title, desc) {
         const popup = document.getElementById('achievementPopup');
-        popup.innerHTML = `<div style="font-size:1.6rem">${title}</div><div style="opacity:0.9">${desc}</div>`;
+        popup.innerHTML = `<div style="font-size:1.2rem">${title}</div><div style="opacity:0.9; font-size:0.8rem">${desc}</div>`;
         popup.classList.add('show'); setTimeout(() => popup.classList.remove('show'), 4000);
     }
 
@@ -483,15 +471,15 @@
             score += 3; document.getElementById('score').textContent = score;
             const combo = document.createElement('div'); combo.className = 'combo-popup';
             combo.textContent = '💫 КОМБО x3! +3'; combo.style.left = cx + 'px'; combo.style.top = cy + 'px'; combo.style.color = '#ff6600';
-            document.body.appendChild(combo); setTimeout(() => combo.remove(), 1600); createBurst(cx, cy, 20);
+            document.body.appendChild(combo); setTimeout(() => combo.remove(), 1600); createBurst(cx, cy, 15);
         } else if (comboCount === 5) {
             score += 10; document.getElementById('score').textContent = score;
             const combo = document.createElement('div'); combo.className = 'combo-popup';
-            combo.textContent = '🔥 СУПЕР-КОМБО! +10'; combo.style.left = cx + 'px'; combo.style.top = cy + 'px'; combo.style.color = '#ff0000'; combo.style.fontSize = '50px';
+            combo.textContent = '🔥 СУПЕР-КОМБО! +10'; combo.style.left = cx + 'px'; combo.style.top = cy + 'px'; combo.style.color = '#ff0000'; combo.style.fontSize = '40px';
             document.body.appendChild(combo); setTimeout(() => combo.remove(), 1600); megaBurst(cx, cy);
         }
         if (comboCount >= 5 && !achievements.pyromaniac) { achievements.pyromaniac = true; showAchievementPopup('🔥 ПОДЖИГАТЕЛЬ!', '5 супер-комбо подряд!'); }
-        if (score % 10 === 0) { firework(cx, cy); setTimeout(() => firework(cx + 100, cy - 50), 200); setTimeout(() => firework(cx - 80, cy + 40), 400); }
+        if (score % 10 === 0) { firework(cx, cy); }
         if (score >= 67 && !achievement67Shown) { show67Chaos(); }
         if (score >= 1000 && !achievement1000Shown) { showThousandAchievement(); }
         fastClicks++; clearTimeout(fastClickTimer); fastClickTimer = setTimeout(() => { fastClicks = 0; }, 5000);
@@ -503,19 +491,19 @@
         updateLevel();
         if (score >= 100 && !achievements.master) { achievements.master = true; showMasterAchievement(); }
         if (comboCount >= 5) activateSpeedBoost();
-        createBurst(cx, cy, 12); createPlusOne(cx, cy - 20, points);
+        createBurst(cx, cy, 8); createPlusOne(cx, cy - 20, points);
         const counterEl = document.getElementById('counter'); counterEl.style.transform = 'scale(1.3)'; setTimeout(() => counterEl.style.transform = 'scale(1)', 150);
         wrapper.style.transition = 'all 0.2s'; wrapper.style.transform = 'scale(1.5)'; wrapper.style.opacity = '0';
         setTimeout(() => { if (wrapper && wrapper.parentNode) { wrapper.remove(); runningPusheens = runningPusheens.filter(p => p !== wrapper); } }, 200);
     }
 
-    function createBurst(x, y, count = 12) {
+    function createBurst(x, y, count = 8) {
         const emojis = ['💖', '✨', '🌟', '💕', '🎀', '🍩', '⭐', '💝', '🌸', '🎂', '💗', '🧁'];
         for (let i = 0; i < count; i++) {
             const p = document.createElement('div'); p.className = 'particle-burst';
             p.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-            p.style.left = x + 'px'; p.style.top = y + 'px'; p.style.fontSize = (20 + Math.random() * 40) + 'px';
-            const angle = (Math.PI * 2 * i) / count; const dist = 50 + Math.random() * 100;
+            p.style.left = x + 'px'; p.style.top = y + 'px'; p.style.fontSize = (18 + Math.random() * 30) + 'px';
+            const angle = (Math.PI * 2 * i) / count; const dist = 40 + Math.random() * 80;
             p.style.setProperty('--dx', Math.cos(angle) * dist + 'px'); p.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
             document.body.appendChild(p); setTimeout(() => p.remove(), 900);
         }
@@ -524,8 +512,8 @@
     function createPlusOne(x, y, pts) {
         const plus = document.createElement('div'); plus.className = 'plus-one';
         plus.textContent = `+${pts} 🐱`; plus.style.left = x + 'px'; plus.style.top = y + 'px';
-        if (pts >= 5) { plus.style.color = 'gold'; plus.style.fontSize = '36px'; }
-        if (pts >= 20) { plus.style.color = '#ff00ff'; plus.style.fontSize = '45px'; plus.textContent = `+${pts} 🔥`; }
+        if (pts >= 5) { plus.style.color = 'gold'; plus.style.fontSize = '28px'; }
+        if (pts >= 20) { plus.style.color = '#ff00ff'; plus.style.fontSize = '35px'; plus.textContent = `+${pts} 🔥`; }
         document.body.appendChild(plus); setTimeout(() => plus.remove(), 1300);
     }
 
@@ -550,12 +538,8 @@
         const duration = speedBoost ? baseDuration * 0.4 : baseDuration;
         wrapper.style.animation = `${animName} ${duration}s ease-in-out forwards`;
         const img = document.createElement('img'); img.alt = golden ? 'Золотой Пушин' : 'Pusheen';
-        // Используем полный путь относительно текущей страницы
         img.src = `pusheen${pusheenNum}.png`;
-        img.onerror = function() { 
-            console.warn('Не загрузился пушин:', this.src);
-            this.src = `pusheen1.png`;
-        };
+        img.onerror = function() { this.src = `pusheen1.png`; };
         wrapper.addEventListener('click', function(e) { handlePusheenClick(e, wrapper, golden); });
         img.addEventListener('click', function(e) { handlePusheenClick(e, wrapper, golden); });
         wrapper.appendChild(img); document.body.appendChild(wrapper); runningPusheens.push(wrapper);
@@ -578,8 +562,8 @@
 
     function startConfetti() {
         if (animFrame) return; resizeCanvas(); particles = [];
-        for (let i = 0; i < 500; i++) {
-            particles.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height, size: Math.random() * 12 + 4, speedY: Math.random() * 5 + 2.5, speedX: (Math.random() - 0.5) * 3, color: `hsl(${Math.random() * 360}, 85%, 65%)`, rotation: Math.random() * 360, rotSpeed: (Math.random() - 0.5) * 10 });
+        for (let i = 0; i < 150; i++) {
+            particles.push({ x: Math.random() * canvas.width, y: Math.random() * canvas.height - canvas.height, size: Math.random() * 10 + 3, speedY: Math.random() * 5 + 2.5, speedX: (Math.random() - 0.5) * 3, color: `hsl(${Math.random() * 360}, 85%, 65%)`, rotation: Math.random() * 360, rotSpeed: (Math.random() - 0.5) * 10 });
         }
         function draw() {
             if (!ctx) return; ctx.clearRect(0, 0, canvas.width, canvas.height); let anyAlive = false;
@@ -626,8 +610,7 @@
     updateTimer(); setInterval(updateTimer, 1000); startRunningPusheens();
     setInterval(() => { const ft = getNextJune23(); if (ft.getTime() !== targetDate.getTime()) { targetDate = ft; updateTimer(); } }, 60000);
 
-    console.log('📱 ОПТИМИЗИРОВАНО ДЛЯ ТЕЛЕФОНА!');
-    console.log('📁 Файлы в папке: pop.mp3, 67.mp3, 100.mp3, 1000.mp3, birthday-song.mp3, special1-4.png, pusheen1-12.png');
+    console.log('📱 ОПТИМИЗИРОВАНО! Не лагает, уровень не перекрывает!');
 })();
 </script>
 </body>
